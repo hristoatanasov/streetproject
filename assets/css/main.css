@@ -1,0 +1,8 @@
+/*color picker: http://paletton.com/ */
+body {
+   font-family: Helvetica;
+   background-color: #FFFFFF;
+   color: #666666;
+   
+   background: #ffffff url("../img/background.jpg") repeat left top;
+}

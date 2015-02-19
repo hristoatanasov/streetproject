@@ -1,0 +1,1 @@
+var strApp = angular.module('strApp', []);
