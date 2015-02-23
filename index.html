@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" ng-app="strApp">
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       
+      <base href="/">
       
       <title>Street Project</title>
       
@@ -19,15 +20,37 @@
       <![endif]-->
    </head>
    <body>
-      <div class="container">
-        <h1>Hello, Bibi! ;)</h1>
-      </div>
+      <div class="container ng-cloak" ng-controller="indexController">
+        <header>
+            <div class="header">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Улици
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div ng-view class="main-view"></div>
+
+        <footer>
+            <div class="container">
+            </div>
+        </footer>
+
+    </div>
       
       
       <script src="assets/lib/jquery/jquery-1.11.1.min.js"></script>
       <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="assets/lib/angularjs/angular.min.js"></script>
+      <script src="assets/lib/angularjs/angular-route.min.js"></script>
       
       <script src="app/app.js"></script>
+      <script src="app/shared/autoFocus/autoFocus.js"></script>
+      <script src="app/shared/index/indexController.js"></script>
+      <script src="app/shared/streets/streetsService.js"></script>
+
+      <script src="app/public/home/home.js"></script>
    </body>
 </html>
