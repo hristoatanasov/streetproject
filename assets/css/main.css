@@ -1,6 +1,11 @@
 /*color picker: http://paletton.com/ */
 body {
-   font-family: Helvetica;
-   
+   font-family: Verdana;
    background: #ffffff url("../img/background1.jpg") repeat left top;
+   color: #336633;
 }
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #FEFACE;
+}
+

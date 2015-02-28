@@ -11,6 +11,8 @@ angular.module('strApp.public.home', [])
 
 .controller('homeController', ['$scope', 'streetsService', function ($scope, streetsService) {
    $scope.streets = [];
+   $scope.searchText = "";
+   
    streetsService.getStreets().success(function(data){
       $scope.streets= data;
    });

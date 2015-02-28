@@ -1,12 +1,14 @@
-﻿<h3>Welcome!</h3>
+﻿<label for="txtSearchText">Търсене:</label> <input ng-model="searchText" id="txtSearchText" type="text" class="form-control"> <br /><br />
 
-<table>
+<table class="table table-striped">
    <tr>
-      <td>Street name</td>
-      <td>Description</td>
+      <th>Име</th>
+      <th>Град</th>
+      <th>Роден(а)</th>
    </tr>
-   <tr ng-repeat="s in streets">
-      <td>{{s.StreetName}}</td>
-      <td>{{s.Description}}</td>
+   <tr ng-repeat="s in streets | filter:searchText">
+      <td><a ng-href="index.html#/street/{{s.Id}}">{{ s.StreetType + ' ' + s.StreetName}}, <br/> {{s.JobTitle}}</a></td>
+      <td>{{s.CityOfBirth}}</td>
+      <td class="text-nowrap">{{s.DateOfBirth}}</td>
    </tr>
 </table>

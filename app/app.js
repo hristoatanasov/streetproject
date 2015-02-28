@@ -7,6 +7,7 @@ var strApp = angular.module('strApp', [
   'strApp.index',
   
   'strApp.public.home',
+  'strApp.public.streetDetails'
 ])
 .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.otherwise({ redirectTo: '/home' });
