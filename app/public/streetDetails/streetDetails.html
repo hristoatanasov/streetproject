@@ -1,4 +1,60 @@
-﻿Име: <span>{{street.StreetName}}</span> <br />
-Описание: <span>{{street.Description}}</span> <br />
-
-<a class="btn btn-default" href="index.html#/home/" role="button">Назад</a>
+﻿<div class="container">
+   <div class="row">
+        <div class="col-sm-3 street-info-details">
+            <div class="row">
+               <div class="col-sm-12">
+                  {{street.FirstName}} {{street.MiddleName}} {{street.LastName}}
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  {{street.JobTitle}}
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <img src="app/data/photos/{{street.Pic}}" class="street-photo" />
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-6">
+                  Роден(а)
+               </div>
+               <div class="col-sm-6">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        {{street.DateOfBirth}}
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-12">
+                        {{street.CityOfBirth}}
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-12">
+                        {{street.CountryOfBirth}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="row">
+               <div class="col-sm-12">
+                  {{street.FirstName}} {{street.MiddleName}} {{street.LastName}}
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12 street-description">
+                  {{street.Description}}
+               </div>
+            </div>
+        </div>
+   </div>
+   <div>
+      <div class="col-sm-12">
+         <a class="btn btn-default" href="index.html#/home/" role="button">Назад</a>
+      </div>
+   </div>
+</div>

@@ -9,3 +9,14 @@ body {
    background-color: #FEFACE;
 }
 
+.street-photo {
+   max-width: 100%;
+}
+
+.street-info-details {
+   background-color: #FFFFFF;
+}
+
+.street-description {
+   text-align: justify;
+}
